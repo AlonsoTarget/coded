@@ -1,0 +1,44 @@
+Resume
+Alonso Victor
+Coder, Web Developer, and Instructor
+Website: google.com
+Phone: 234-090-3984
+Twitter: null
+
+Hi I'm Alonso Victor and I'm happy to be learning from your course sir. I promise to understand and never imitate
+
+Services
+Web Development
+App Development
+learning
+
+Skills
+HTML
+Markup your content with sematic HTML
+CSS
+Layout your content visually for multiple devices.
+Javascipt
+Make your conteny more interactive, and build web applications.
+
+Work History
+UX/UI Designer
+XYZ Corp
+3 years
+
+Web Developer
+ABC Corp
+5 years
+
+Carpet Cleaner
+123 Inc.
+2 years
+
+Portfolio
+
+Testimonials
+I love Tony's courses!
+Tony's courses helped me get a job
+
+Mailing Address 
+111 Main St.
+Somewhere NY 333333

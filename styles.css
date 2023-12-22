@@ -1,0 +1,259 @@
+[class~='resume-list'] {
+    font-style: italic;
+}
+p::first letter {
+    font-weight: bold;
+}
+
+ul {
+    outline: solid 1px blueviolet;
+    font-weight: bold;
+}
+
+li {
+    outline: inherit;
+    font-weight: initial;
+}
+:is(ul.resume-list, ol) li{
+    outline: solid 1px blueviolet;
+}
+
+:root {
+    --accent-color: rgba(11, 145, 11);
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    display: grid;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: rgb(33, 255, 33);
+}
+
+h1 {
+    margin-block-end: 0;
+}
+
+h2 {
+    margin-block-end: o.75rem;
+}
+
+input, select, textarea {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+nav {
+    position: sticky;
+    inset-inline-start: 0;
+    background-color:  #702900;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline: 0;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 .25rem;
+    margin-inline: .25rem;
+    margin-block: 0;
+    line-height: 1.5rem; 
+}
+
+main {
+    padding-block: 0;
+    margin-block: 0;
+    display: grid;
+    grid-template-columns: 25px 1fr 25px;
+    row-gap: 20px;
+    background-image: url(istoc2.jpg);
+    background-size: contain;
+}
+
+main > *{
+    grid-column: 2;
+}
+
+.socail_logo {
+    inline-size: 1rem;
+}
+
+.full-bleed {
+    grid-column: 1 / span 3;
+}
+
+.flex-header, .motto {
+    flex-basis: 100%;
+}
+
+#aboutme {
+    background-color: #702900;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: initial;
+    text-align: center;
+    --text-color: rgb(11, 141, 11);
+}
+
+#aboutme h2 {
+    color: white;
+}
+
+#aboutme footer{
+    text-align: center;
+}
+
+#aboutme footer a, #aboutme footer a:visited, #aboutme footer a:hover{
+    color: white;
+}
+#aboutme aside {
+    order: 10;
+    text-align: center;
+}
+
+#portfolio {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    grid-template-areas:    "portfolio portfolio"
+                                    "anchor img1";
+                            
+    grid-gap: 15px;
+    align-items: end;
+    background-color: var(--accent-color);
+    padding-block: 1rem;
+}
+
+#portfolio h2 {
+    grid-row: 1 / span 2;
+}
+
+#portfolio img {
+    max-inline-size: 100%;
+}
+
+#portfolio img:hover {
+    opacity: 0.7;
+    transition: opacity 0.5s;
+}
+
+img.anchor {
+    grid-row: 1 / span 2;
+}
+
+#testimonial blockquote {
+    border-inline: solid 1px black;
+    border-block: solid 1px black;
+    padding-inline: 0.5rem;
+    padding-block: 0;
+    margin-inline: 0;
+    margin-block: 0.5rem;
+    color: var(--test-color, rgb(11, 145, 11));
+}
+
+#testimonials h2 {
+    order: -2;
+}
+
+blockquote.featured {
+    order: -1;
+    flex: 1 0 auto;
+    background-color: black;
+    color: white;
+    margin-inline-end: 1rem;
+    font-weight: bold;
+}
+
+.resume-fieldset {
+    border-inline: none;
+    border-block: none;
+    margin-inline: 0;
+    margin-block: 0;
+    padding-block: 0;
+}
+
+.resume fieldset legend {
+    padding-inline: 0;
+    padding-block: 0;
+}
+
+.label-standard {
+    display: block;
+    margin: 0.125rem;
+}
+
+.field {
+    margin-bottom: 1.25rem;
+}
+
+.button {
+    background-color: black;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-inline: 1rem;
+    padding-block: .5rem;
+    border-inline: none;
+    border-block: none;
+}
+
+.button:hover {
+    background-color: var(--accent-color);
+    transition: background-color .5s;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        grid-template-columns: 50px 1fr 50px;
+    }
+
+    #aboutme {
+        justify-content: initial;
+        text-align: center;
+    }
+
+    #portfolio {
+        grid-template: repeat(2, 1fr) / repeat(4 , 1fr);
+        grid-template-areas:    "portfolio anchor img1 img2 img3"
+                                "img6 portfolio img4 img5";
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        grid-template-columns: 50px 1fr 50px;
+    }
+    
+
+    .full-bleed {
+        padding-inline: 15%;
+    }
+
+@media print {
+    #aboutme {
+        background-color: white;
+        color: black;
+    }
+
+    #contactme {
+        display: none
+    }
+}
+
+
+
+
+}
